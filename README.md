@@ -17,34 +17,35 @@ Power BI
 
 This project follows the Medallion Architecture:
 
- Bronze Layer (Raw Data)
+ -Bronze Layer (Raw Data)
 Ingests raw earthquake data directly from the USGS API
 Stores data with minimal transformation
 Acts as the source of truth
- Silver Layer (Cleaned & Transformed)
+-Silver Layer (Cleaned & Transformed)
 Cleans and standardizes the data
 Handles missing/null values
 Applies transformations and data enrichment
 Prepares structured datasets for analysis
- Gold Layer (Business-Ready Data)
+ -Gold Layer (Business-Ready Data)
 Creates aggregated and analytics-ready datasets
 Optimized for reporting and dashboards
 Used in Power BI for visualization and insights
+
  Repository Contents
-Bronze Layer Notebook
+-Bronze Layer Notebook
 Handles ingestion of raw earthquake data from the API
-Silver Layer Notebook
+-Silver Layer Notebook
 Performs data cleaning, transformation, and enrichment
-Gold Layer Notebook
+-Gold Layer Notebook
 Produces curated datasets for analytics and reporting
+
  Getting Started
-Clone the repository:
-git clone https://github.com/your-username/Earthquake-Data-Engineering-Project.git
 Open Microsoft Fabric
 Upload the notebooks to your workspace
 Run the notebooks in order:
 Bronze → Silver → Gold
 Connect Power BI to the Gold layer for visualization
+
  Use Cases
 Earthquake trend analysis
 Geospatial insights
